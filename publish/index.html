@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="APP">
+<head>
+    <meta charset="UTF-8">
+  <style>
+    button {
+        background-color: #008CBA;
+        border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+    }
+  </style>
+</head>
+
+<body style="background: #00001a">
+  <div style="position: absolute; transform: translate(-50%, -50%); background: #00004d; box-shadow: #00005a
+ 0px 4px 8px 0px, #00005a 0px 6px 20px 0px; border-radius: 12px; width: 40%; left: 50%; top: 50%; height: 85%;">
+<img src="https://MottuVM.seven7four4.repl.co/storage/mottuvm.png" style="position: relative; width: 500px; height: 250px; right: 4%;">
+      <form method='post' action='vm' enctype="multipart/form-data">
+        <select id="mode" name="mode" style="position: absolute; left: 40%;">
+    <option value="hard-disk">Hard Disk</option>
+    <option value="floppy-disk">Floppy Disk</option>
+    <option value="cd-rom">CD Rom</option>
+  </select>
+                  <br>
+                          <br>
+  
+        
+                  <br>
+                          <br>
+        <input type='file' name='fileUploaded' style="color: white; position: absolute; left: 30%; top: 65%;" id="upload">
+                  <br>
+                          <br>
+
+        <input type='submit' id="contact-submit" style="position: absolute; left: 40%; background-color: #008CBA; border: none; color: white; padding: 16px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; transition-duration: 0.4s; cursor: pointer;">
+                  <br>
+                          <br>
+                            <br>
+                          <br>  <br>
+                          <a style="position: absolute; width: 100%; text-align: center;" href="saved.html"> Saved VMs </a>
+
+    </form>
+</div>
+
+ </body>
+</html>
