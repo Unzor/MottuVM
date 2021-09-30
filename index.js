@@ -45,7 +45,7 @@ app.post('/vm', function(req, res){
    var mode = req.body.mode
   var h = req.files;
   var fileName_='/storage/'+ randomString(36) + '.' + h.fileUploaded.name.split('.').pop();
-require('fs').writeFileSync('public' + fileName_, h.fileUploaded.data, 'utf8', ()=>{})
+require('fs').writeFileSync('publish' + fileName_, h.fileUploaded.data, 'utf8', ()=>{})
 res.send(`<!DOCTYPE HTML>
 <html>
 <body style="background: #00001a">
